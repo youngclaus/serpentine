@@ -1,22 +1,27 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./title.css"
 
 const TitleAnimation = () => {
-    const letters = document.querySelectorAll('.title span');
-
-    function animateLetters() {
+    const animateLetters = () => {
+        const letters = document.querySelectorAll('.title span');
         letters.forEach((letter, index) => {
             setTimeout(() => {
                 letter.style.animation = 'none';
                 requestAnimationFrame(() => {
                     letter.style.animation = '';
                 });
-            }, index * 500);
+            }, index * 500); // 500ms delay for each letter
         });
-    }
+    };
 
-setInterval(animateLetters, 10000);
-animateLetters();
+    useEffect(() => {
+        animateLetters(); // Animate on mount
+
+        const title = document.querySelector('.title');
+        title.addEventListener('mouseover', animateLetters);
+
+        return () => title.removeEventListener('mouseover', animateLetters);
+    }, []);
 
     return( 
         <div class="title">
