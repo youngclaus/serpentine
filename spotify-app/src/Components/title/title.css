@@ -3,7 +3,7 @@
 .title {
     text-align: center;
     font-family: 'Rubik Bubbles', sans-serif;
-    font-size: clamp(50px, 7vw, 100px);
+    font-size: clamp(70px, 7vw, 100px);
     white-space: nowrap;
     display: inline-block;
     color: rgb(184, 60, 255);

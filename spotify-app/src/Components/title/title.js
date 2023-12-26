@@ -10,12 +10,12 @@ const TitleAnimation = () => {
                 requestAnimationFrame(() => {
                     letter.style.animation = '';
                 });
-            }, index * 500); // 500ms delay for each letter
+            }, index * 5); // each letter
         });
     };
 
     useEffect(() => {
-        animateLetters(); // Animate on mount
+        animateLetters();
 
         const title = document.querySelector('.title');
         title.addEventListener('mouseover', animateLetters);

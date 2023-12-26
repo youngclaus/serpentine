@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import TitleAnimation from './Components/title/title.js'
+import FriendSearchComponent from './Components/search/searchbar.js';
 import { SpotifyLoginComponent } from './Components/authentication/login.js';
 
 function App() {
@@ -10,7 +11,10 @@ function App() {
         <TitleAnimation/>
       </div>
       <div className="auth_button">
-        <SpotifyLoginComponent />
+        <SpotifyLoginComponent/>
+      </div>
+      <div>
+        <FriendSearchComponent/>
       </div>
     </div>
   );

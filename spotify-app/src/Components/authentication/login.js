@@ -38,7 +38,10 @@ export const SpotifyLoginComponent = () => {
             <img 
                 src={userProfile?.images[0]?.url || './Images/default-avatar.png'} 
                 alt="Spotify Profile" 
-                style={{ width: '50px', height: '50px', borderRadius: '50%' }}
+                style={{ 
+                    width: '80px', height: '80px', 
+                    borderRadius: '50%', borderColor: 'blue', border: '3px solid'
+                }}
             />
         )}
     </div>

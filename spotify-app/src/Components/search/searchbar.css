@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+.searchbar-container {
+    position: fixed;
+    top: 300px;
+    left: 50%;
+}
+.searchbar {
+    position: relative;
+    font-family: 'Yatra One', sans-serif;
+    font-size: clamp(20px, 6vw, 25px);
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+    color: white;
+    white-space: nowrap;
+    background-color: rgba(194, 40, 255, 0.5);
+    border-radius: 500px;
+    border-color: rgba(0, 0, 0, 0);
+    padding: 5px;
+    transform: translate(-50%);
+    z-index: 2;
+}
+
+.searchbar:focus {
+    outline: none;
+}
+
+.searchbar::placeholder {
+    color: rgba(256, 256, 256, 0.9);
+}
+

@@ -1,0 +1,15 @@
+.suggestions-dropdown {
+    position: absolute;
+    top: 65%;
+    width: 65%;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    background-color: rgba(194, 40, 255, 0.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.suggestions-dropdown li {
+    /* Styles for each suggestion */
+}
