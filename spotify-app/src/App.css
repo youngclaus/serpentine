@@ -1,13 +1,21 @@
 .background {
-  background-image: url('../public/background.png');
+  background-image: url('./Images/background.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
   width: 100%;
 }
 
-.title-text {
-  position: absolute;
+.auth_button {
+  position: fixed;
   left: 50%;
   transform: translate(-50%);
+  top: 200px;
+}
+
+.title-text {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  top: 80px;
 }
