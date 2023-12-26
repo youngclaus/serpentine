@@ -1,6 +1,7 @@
 import React from "react";
+require('dotenv').config();
 
-const CLIENT_ID = "1e0f86a32bef4945880f774deaf9e988";
+const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
 const REDIRECT_URI = "http://localhost:3000/callback";
 const SCOPES = ["user-read-private", "user-read-email"];
 
