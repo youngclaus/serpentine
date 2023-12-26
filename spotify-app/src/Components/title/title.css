@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
 .title {
     text-align: center;
-    font-size: 48px;
+    font-family: 'Rubik Bubbles', sans-serif;
+    font-size: clamp(50px, 7vw, 100px);
+    white-space: nowrap;
     display: inline-block;
+    color: rgb(184, 60, 255);
 }
 
 .title span {

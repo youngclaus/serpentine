@@ -24,7 +24,7 @@ const TitleAnimation = () => {
     }, []);
 
     return( 
-        <div class="title">
+        <div className="title">
             <span>s</span>
             <span>p</span>
             <span>o</span>
