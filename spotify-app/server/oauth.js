@@ -1,3 +1,4 @@
+import React from 'react';
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
@@ -12,8 +13,8 @@ app.post('/spotify/token', async (req, res) => {
         grant_type: 'authorization_code',
         code: code,
         redirect_uri: 'http://localhost:3000/callback',
-        client_id: '1e0f86a32bef4945880f774deaf9e988',
-        client_secret: '35ca57cc47c645bc810507f5a527413a'
+        client_id: process.env.REACT_APP_SPOTIFY_CLIENT_ID,
+        client_secret: process.env.REACT_APP_SPOTIFY_CLIENT_SECRET
     });
 
     try {
